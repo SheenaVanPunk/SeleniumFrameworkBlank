@@ -9,6 +9,6 @@ private HomePage hp;
 
     @org.testng.annotations.Test
     public void testSearchForAnItemAndVerifyThatThePageChanged(){
-
+        //example of a test
     }
 }

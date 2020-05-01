@@ -30,7 +30,7 @@ public class EventListener implements WebDriverEventListener {
 
     @Override
     public void beforeNavigateTo(String s, WebDriver webDriver) {
-
+        System.out.println("Navigating to..." + s);
     }
 
     @Override
@@ -90,12 +90,12 @@ public class EventListener implements WebDriverEventListener {
 
     @Override
     public void beforeChangeValueOf(WebElement webElement, WebDriver webDriver, CharSequence[] charSequences) {
-
+        System.out.println("INFO - initial value was: "+ webElement.getText());
     }
 
     @Override
     public void afterChangeValueOf(WebElement webElement, WebDriver webDriver, CharSequence[] charSequences) {
-
+        System.out.println("INFO - value was changed to: "+ webElement.getText());
     }
 
     @Override

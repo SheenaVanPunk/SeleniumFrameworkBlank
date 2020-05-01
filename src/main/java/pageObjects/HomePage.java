@@ -8,6 +8,7 @@ import utilities.HtmlElement;
 import utilities.Page;
 
 public class HomePage extends Page {
+// example for a page object that inherits from Page and its constructor
 
     public HomePage(WebDriver driver, WebDriverWait wait){
         super(driver, wait);
