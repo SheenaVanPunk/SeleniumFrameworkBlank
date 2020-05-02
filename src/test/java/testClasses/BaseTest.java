@@ -13,6 +13,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import pageObjects.HomePage;
 import utilities.Page;
 import utilities.WindowManager;
 
@@ -24,6 +25,7 @@ public class BaseTest {
     protected static WebDriver driver;
     protected static WebDriverWait wait;
     private static String url = "";
+    protected static HomePage hp;
 
     @BeforeClass
     public void setUp() {
@@ -36,12 +38,12 @@ public class BaseTest {
         driver.register(new EventListener());
          */
 
-        Page page = new Page(driver, wait);
     }
 
     @BeforeMethod
     public void goToHomePage() {
         driver.get(url);
+        hp = new HomePage(driver, wait);
         driver.manage().window().maximize();
     }
 

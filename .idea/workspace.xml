@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e646b72d-563d-4f71-a299-786045a49d57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/EventListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testClasses/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testClasses/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testClasses/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testClasses/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testClasses/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testClasses/QuickSmokeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AaronTraining" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -55,7 +52,25 @@
       <recent name="utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Test.testSearchForAnItemAndVerifyThatThePageChanged">
+  <component name="RunManager" selected="TestNG.QuickSmokeTest.testIsTheWebSiteLoadingTheHomePage">
+    <configuration name="QuickSmokeTest.testIsTheWebSiteLoadingTheHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkBlank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testClasses" />
+      <option name="MAIN_CLASS_NAME" value="testClasses.QuickSmokeTest" />
+      <option name="METHOD_NAME" value="testIsTheWebSiteLoadingTheHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test.testOpenPageAndChangeATab" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="E-CommerceUIRegression" />
       <extension name="coverage">
@@ -94,6 +109,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.QuickSmokeTest.testIsTheWebSiteLoadingTheHomePage" />
         <item itemvalue="TestNG.Test.testSearchForAnItemAndVerifyThatThePageChanged" />
         <item itemvalue="TestNG.Test.testOpenPageAndChangeATab" />
       </list>
@@ -121,26 +137,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588301234371" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1588351508615">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1588352534330">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588351508615" />
-    <state width="1323" height="222" key="GridCell.Tab.0.bottom" timestamp="1588301451824">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588352534330" />
+    <state width="1323" height="251" key="GridCell.Tab.0.bottom" timestamp="1588390183495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
-    <state width="1323" height="222" key="GridCell.Tab.0.center" timestamp="1588301451824">
+    <state width="1323" height="251" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588390183495" />
+    <state width="1323" height="251" key="GridCell.Tab.0.center" timestamp="1588390183495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
-    <state width="1323" height="222" key="GridCell.Tab.0.left" timestamp="1588301451824">
+    <state width="1323" height="251" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1588390183495" />
+    <state width="1323" height="251" key="GridCell.Tab.0.left" timestamp="1588390183494">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
-    <state width="1323" height="222" key="GridCell.Tab.0.right" timestamp="1588301451824">
+    <state width="1323" height="251" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1588390183494" />
+    <state width="1323" height="251" key="GridCell.Tab.0.right" timestamp="1588390183495">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
+    <state width="1323" height="251" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588390183495" />
     <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1588301451824">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
