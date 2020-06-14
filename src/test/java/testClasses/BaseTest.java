@@ -1,68 +1,84 @@
 package testClasses;
 
-import com.google.common.io.Files;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 import pageObjects.HomePage;
-import utilities.Page;
-import utilities.WindowManager;
+import classUtils.WindowManager;
+import testUtils.BrowserFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.util.Arrays;
 
 public class BaseTest {
     //private static EventFiringWebDriver driver;
-    protected static WebDriver driver;
-    protected static WebDriverWait wait;
-    private static String url = "";
+    protected WebDriver driver;
+    protected SoftAssert soft = new SoftAssert();
     protected static HomePage hp;
 
-    @BeforeClass
-    public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
-        driver = new ChromeDriver(getChromeDriverOptions());
-        wait = new WebDriverWait(driver, 8);
-        /*
+    public WebDriver getDriver() {
+        return driver;
+    }
+
+    @Parameters({"url", "browser"})
+    @BeforeMethod(alwaysRun = true)
+    /*
         if the project needs EventFiringWebDriver implementation, add these two lines
         driver = new EventFiringWebDriver(new ChromeDriver(getChromeOptions())); ----> this one goes instead of line no 31
         driver.register(new EventListener());
          */
 
-    }
-
-    @BeforeMethod
-    public void goToHomePage() {
-        driver.get(url);
-        hp = new HomePage(driver, wait);
-        driver.manage().window().maximize();
-    }
-
-    @AfterMethod
-    public void recordFailure(ITestResult result) {
-        if (ITestResult.FAILURE == result.getStatus()) {
-            var camera = (TakesScreenshot) driver;
-            File screenshot = camera.getScreenshotAs(OutputType.FILE);
-            try {
-                Files.move(screenshot, new File("resources/failedTestScreenshots/" + result.getName() + ".png"));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    public HomePage initDriverAndGoToHomePage(String url, String browser) {
+        try {
+            BrowserFactory factory = new BrowserFactory();
+            driver = factory.getDriver(browser);
+        } catch (Exception e) {
+            System.out.println("Error....." + Arrays.toString(e.getStackTrace()));
         }
+
+        driver.get(url);
+        hp = new HomePage(driver);
+        return hp;
     }
 
-    @AfterClass
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
+        driver.manage().deleteAllCookies();
         driver.quit();
+
+    }
+
+    public WindowManager getWindowManager() {
+        return new WindowManager(driver);
+    }
+
+    public String getScreenshotPath(String testCaseName, String testClassName, WebDriver driver) {
+        String screenshotFolderPath = "\\resources\\failedTestScreenshots\\" + LocalDate.now() + "\\" + testClassName + "\\";
+        try {
+            File file = new File(screenshotFolderPath);
+            if (!file.exists())
+                System.out.println("New folder for storing screenshots created " + file);
+            file.mkdir();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        TakesScreenshot camera = (TakesScreenshot) driver;
+        File screenshot = camera.getScreenshotAs(OutputType.FILE);
+        String screenshotPath = System.getProperty("user.dir") + screenshotFolderPath + testCaseName + ".png";
+        File file = new File(screenshotPath);
+        try {
+            FileUtils.copyFile(screenshot, file);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return screenshotPath;
     }
 
     private ChromeOptions getChromeDriverOptions() {
@@ -72,7 +88,4 @@ public class BaseTest {
         return options;
     }
 
-    public WindowManager getWindowManager() {
-        return new WindowManager(driver, wait);
-    }
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="blank" verbose="1" parallel="methods" thread-count="1">
+    <!--    <suite name="Class1Suite" parallel="methods" group-by-instances="true" object-factory="testUtilities.ObjectFactory">-->
+    <listeners>
+        <listener class-name="testUtils.TestListener"/>
+        <!--       <listener class-name="testUtilities.AnnotationTransformer"/>-->
+    </listeners>
+
+    <parameter name="url" value=""/>
+    <parameter name="browser" value=""/>
+
+        <test name="MyAccountPage - registration, login and password reset">
+            <parameter name="browser" value=""/>
+    <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="regression"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+            <classes>
+                <class name="testClasses.T"/>
+           </classes>
+        </test>
+</suite>
