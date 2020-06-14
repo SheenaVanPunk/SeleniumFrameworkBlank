@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e646b72d-563d-4f71-a299-786045a49d57" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/classUtils/LoggerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E-CommerceUIRegression.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classUtils/Logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/EventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/HtmlElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Logger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/WindowManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testClasses/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testClasses/QuickSmokeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +40,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ignore.preview.features.used" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17126437" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -46,7 +57,17 @@
       <recent name="utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.QuickSmokeTest.testIsTheWebSiteLoadingTheHomePage">
+  <component name="RunManager" selected="TestNG.C:/Users/Nena/IdeaProjects/SeleniumFrameworkBlank/testng.xml">
+    <configuration name="C:/Users/Nena/IdeaProjects/SeleniumFrameworkBlank/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkBlank" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QuickSmokeTest.testIsTheWebSiteLoadingTheHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkBlank" />
       <extension name="coverage">
@@ -103,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Nena/IdeaProjects/SeleniumFrameworkBlank/testng.xml" />
         <item itemvalue="TestNG.QuickSmokeTest.testIsTheWebSiteLoadingTheHomePage" />
         <item itemvalue="TestNG.Test.testSearchForAnItemAndVerifyThatThePageChanged" />
         <item itemvalue="TestNG.Test.testOpenPageAndChangeATab" />
@@ -123,10 +145,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="163" y="0" key="#Project_Structure" timestamp="1592103886509">
+    <state x="163" y="0" key="#Project_Structure" timestamp="1592107232776">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1592103886509" />
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1592107232776" />
     <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588291886222">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -179,9 +201,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1592103697863" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1592103921397">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1592107383600">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592103921397" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592107383600" />
   </component>
 </project>

@@ -9,17 +9,17 @@
     </listeners>
 
     <parameter name="url" value=""/>
-    <parameter name="browser" value=""/>
+    <parameter name="browser" value="chrome"/>
 
-        <test name="MyAccountPage - registration, login and password reset">
-            <parameter name="browser" value=""/>
+        <test name="">
+            <parameter name="browser" value="chrome"/>
     <!--        <groups>-->
     <!--            <run>-->
     <!--                <include name="regression"/>-->
     <!--            </run>-->
     <!--        </groups>-->
             <classes>
-                <class name="testClasses.T"/>
+                <class name="testClasses.QuickSmokeTest"/>
            </classes>
         </test>
 </suite>
