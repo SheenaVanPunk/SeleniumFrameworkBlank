@@ -17,6 +17,7 @@
         <selenium.firefoxdriver.version>3.141.59</selenium.firefoxdriver.version>
         <extentreport.version>4.1.5</extentreport.version>
         <commons.io.version>2.6</commons.io.version>
+        <logger.version>1.7.30</logger.version>
     </properties>
 
     <build>
@@ -71,6 +72,11 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>${commons.io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${logger.version}</version>
         </dependency>
     </dependencies>
 
